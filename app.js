@@ -66,7 +66,7 @@ app.delete('/assignments/:id', async(req, res)=>{
     }catch(err){
         console.log(err)
         res.status(500).json({
-            errorMessage: 'Server is stop'
+            errorMessage: 'Server stopped'
         });
     }
 })
@@ -82,7 +82,7 @@ app.get('/assignments', async(req, res)=>{
     } catch(err) {
         console.log(err)
         res.status(500).json({
-            errorMessage: 'Server is stop'
+            errorMessage: 'Server stopped'
         });
     }
 })
